@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DAY8</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>1. Basic Form Structure</h2>
+        <form action="/submit-form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Submit</button>
+        
+
+          <h2>2. Input Fields – Text, Password, and Email</h2>
+          
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required><br><br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        
+
+         <h2>3. Checkbox and Radio Buttons</h2>
+         <label for="subscribe">Subscribe to newsletter:</label>
+         <input type="checkbox" id="subscribe" name="subscribe"><br>
+
+         <label>Choose your favorite color:</label>
+         <input type="radio" id="red" name="color" value="red">
+         <label for="red">Red</label>
+         <input type="radio" id="blue" name="color" value="blue">
+         <label for="blue">Blue</label>
+
+         <h2>4. Select Dropdown</h2>
+         <label for="city">Select your city:</label>
+         <select id="city" name="city">
+           <option value="nyc">New York</option>
+           <option value="la">Los Angeles</option>
+           <option value="sf">San Francisco</option>
+         </select>
+
+         <h2>5. Textarea (Multi-line Text Input)</h2>
+         <label for="comments">Comments:</label>
+         <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+         <h2>6. File Upload</h2>
+         <label for="file">Upload your resume:</label>
+         <input type="file" id="file" name="resume">
+
+         <h2>7. Button Types (Submit, Reset, and Custom)</h2>
+         <button type="submit">Submit</button><br><br>
+         <button type="reset">Reset</button><br><br>
+         <button type="button" onclick="alert('Hello!')">Click Me</button>
+
+
+         <h2>8. Grouping Form Elements (Fieldset & Legend)</h2>
+         <fieldset>
+            <legend>Personal Information</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name">
+          </fieldset>
+           
+         <h2>9. Form Validation (Required, Pattern, Min/Max)</h2> 
+         <label for="username">Username:</label>
+         <input type="text" id="username" name="username" required><br><br>
+         <label for="phone">Phone Number:</label>
+         <input type="text" id="phone" name="phone" pattern="\d{3}[-]\d{3}[-]\d{4}" required><br><br>
+         <label for="age">Age:</label>
+         <input type="number" id="age" name="age" min="18" max="100" required>
+
+         <h2>10. Form Action and Method</h2>
+         <form action="submit_form.php" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+          </form>
+        
+          <h2>11. Multiple Forms on One Page</h2>
+          <form action="login.php" method="POST">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="email" required>
+            <button type="submit">Login</button>
+          </form>
+          
+          <form action="register.php" method="POST">
+            <label for="register-email">Email:</label>
+            <input type="email" id="register-email" name="email" required>
+            <button type="submit">Register</button>
+          </form>
+
+          <h2>12. Hidden Input Field</h2>
+          <input type="hidden" name="user_id" value="12345">
+
+          <h2>13. Styling Forms</h2>
+          
+       </form>
+
+    </body>
+</html>
